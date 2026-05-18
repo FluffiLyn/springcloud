@@ -12,6 +12,11 @@ spring:
     show-sql: true
     generate-ddl: true
     database: mysql
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 eureka:
   client:
     register-with-eureka: true
@@ -20,12 +25,6 @@ eureka:
       defaultZone: http://localhost:8888/eureka
   instance:
     prefer-ip-address: true
-spring:
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
 management:
   endpoints:
     web:

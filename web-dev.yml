@@ -7,6 +7,11 @@ spring:
         url: http://localhost:7779
   application:
     name: myshop-web
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 eureka:
   client:
     register-with-eureka: true
@@ -23,9 +28,3 @@ management:
     web:
       exposure:
         include: "*"
-spring:
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
