@@ -5,8 +5,15 @@ spring:
     admin:
       client:
         url: http://localhost:7779
+        instance:
+          service-base-url: http://localhost:9002
   application:
     name: myshop-web
+  sleuth:
+    web:
+      enabled: true
+    sampler:
+      probability: 1.0
   rabbitmq:
     host: localhost
     port: 5672
